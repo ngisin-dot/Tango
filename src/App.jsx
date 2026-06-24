@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback } from "react";
+import BitcoinChart from "./BitcoinChart.jsx";
 
 const RAW_DATA = [
   {id:"2003932633",name:"קליטת פרויקט",order:1,phase:"קליטה",deps:[]},
@@ -449,6 +450,8 @@ export default function App() {
       </div>
 
       <div style={{ padding:"24px", maxWidth:1500, margin:"0 auto" }}>
+
+        <BitcoinChart />
 
         {/* ── SECTION LABEL ── */}
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:18 }}>
